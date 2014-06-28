@@ -46,4 +46,9 @@ describe Game do
     rollMany(16, 0)
     expect(game.score).to eq 24
   end
+
+  it "全部ストライク" do
+    rollMany(12, 10)
+    expect(game.score).to eq 300
+  end
 end
